@@ -16,6 +16,9 @@ class GameHUD: SKScene {
     var recentLabel: SKLabelNode?
     var highScoreLabel: SKLabelNode?
     
+    //var unmuted = SKSpriteNode(imageNamed: "unmuted")
+    //var muted = SKSpriteNode (imageNamed: "muted")
+    
     init(size: CGSize, menu: Bool) {
         super.init(size: size)
         
@@ -62,6 +65,8 @@ class GameHUD: SKScene {
         highScoreLabel.horizontalAlignmentMode = .left
         highScoreLabel.position = CGPoint(x: frame.minX , y: frame.maxY - recentLabel.frame.size.height * 4)
         addChild(highScoreLabel)
+        
+        
         
     }
     
